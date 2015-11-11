@@ -1,0 +1,22 @@
+Name: eee
+Last name: xxx
+ID: 1339
+Type: Sprint
+Shoot: 1
+Gender: w
+Distance(km): 10
+Time_minutes: 33
+Time_seconds: 33
+Time_milliseconds: 2
+;
+Name: www
+Last name: www
+ID: 1378
+Type: Pursuit
+Shoot: 3
+Gender: m
+Distance(km): 10
+Time_minutes: 3
+Time_seconds: 3
+Time_milliseconds: 33
+;

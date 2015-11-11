@@ -1,3 +1,4 @@
-Консольное приложение. 
+﻿Консольное приложение. 
 1. Биатлон: организация меню(help, add, delete, list, exit), список биатлонистов и их достижения. 
-2. ConsoleApplication3 - использование классов. (+singleton). организация меню(help, add, list, exit)
+2. ConsoleApplication3 - использование классов(+singleton), exception. чтение из/запись в файл.
+организация меню(help, add, change, remove, list, exit).
