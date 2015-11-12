@@ -235,16 +235,23 @@ void show_list(Singleton& biathlon){
 void del_element(Singleton& biathlon){
 	int buf_id;
 	cout << "Enter the biathlonist1s ID: ";
-	cin >> buf_id;
+	do{
+		cin.clear();
+		cin.sync();
+		cin >> buf_id;
+	} while (cin.fail());
 	biathlon.remove(buf_id);
 }
 
 void changes(Singleton& biathlon){
 	int for_input_id;
-	cout << "Do you want to change informaton about biathlonist?" << endl << "Enter his ID: ";
-	cin >> for_input_id;
+	cout << "Do you want to change informaton about biathlonist? /n" << "Enter his ID: ";
+	do{
+		cin.clear();
+		cin.sync();
+		cin >> for_input_id;
+	} while (cin.fail());
 	biathlon.changes_b(for_input_id);
-
 }
 
 void operations(Singleton& biathlon, int count){

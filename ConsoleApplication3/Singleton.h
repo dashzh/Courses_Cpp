@@ -392,11 +392,16 @@ int work_file2(){
 	}
 /////////////////////////////////////////////////////////////////////////////////
 	void remove(int d) {
+		bool check_id_exist = true;
 		for (int i = 0; i < biathlonist.size(); i++){
 		if (biathlonist[i].get_id() == d){
+			check_id_exist = false;
 			swap(biathlonist[i], biathlonist.back());
 			biathlonist.pop_back();
 			}
+		}
+		if (check_id_exist){
+			cout << "There isn`n biathlonist with such id";
 		}
 		work_file();
 	}
@@ -418,9 +423,11 @@ int work_file2(){
 		}
 /////////////////////////////////////////////////////////////////////////////////
 		void changes_b(int id_change){
+			bool check_id_exist = true;
 			cout << "This is the list with the data which was added earlier. if you donn`t want to change item, you need enter 0. Ghange it: " << endl;
 			for (int i = 0 ; i< biathlonist.size(); i++){
 				if (biathlonist[i].get_id() == id_change){
+				check_id_exist = false;
 				cout << "ID: " << biathlonist[i].get_id() << endl;
 //_NAME_____LAST_NAME
 				cout << "Name: " << biathlonist[i].get_name() << ": ";
@@ -551,6 +558,9 @@ int work_file2(){
 					}
 					else{biathlonist[i].set_millisec(buf_millisec);}
 			}
+			}
+			if (check_id_exist){
+				cout << "There isn`n biathlonist with such id";
 			}
 			work_file();
 		}
